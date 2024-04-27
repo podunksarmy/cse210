@@ -7,27 +7,30 @@ class Program
         Console.Write("What is your grade? ");
         string userInput = Console.ReadLine();
         int userGrade = int.Parse(userInput);
+        string letter = "";
 
         if (userGrade >= 90)
         {
-            Console.WriteLine("A");
+            letter = "A";
         }
         else if (userGrade >= 80)
         {
-            Console.WriteLine("B");
+            letter = "B";
         }
         else if (userGrade >= 70)
         {
-            Console.WriteLine("C");
+            letter = "C";
         }
         else if (userGrade >= 60)
         {
-            Console.WriteLine("D");
+            letter = "D";
         }
         else
         {
-            Console.WriteLine("F");
+            letter = "F";
         }
+
+        Console.WriteLine(letter);
 
         int passFail = userGrade;
 
