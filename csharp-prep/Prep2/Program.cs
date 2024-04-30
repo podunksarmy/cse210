@@ -29,8 +29,19 @@ class Program
         {
             letter = "F";
         }
-
-        Console.WriteLine(letter);
+        Console.Write(letter);
+              
+              
+        int lastDigit = userGrade % 10;
+   
+        if (lastDigit > 7) 
+        {
+            Console.WriteLine("+");
+        }
+        else if (lastDigit < 3)
+        {
+            Console.WriteLine("-");
+        }        
 
         int passFail = userGrade;
 
